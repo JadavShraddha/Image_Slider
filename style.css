@@ -1,0 +1,85 @@
+body{
+    /* background-color: rgb(229, 235, 233); */
+    background: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRciqJFoUKb3JI5Jow5wFXeNAeQQFFPN3L2_qn0rTiDL-zr8FD00qJKhJUfCBF5JL3vfgLqxgHe0XY&usqp=CAU&ec=48665701) no-repeat;
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.bi{
+    background-image: url(https://wallup.net/wp-content/uploads/2019/10/550531-flower-nature-plant-colorful-beautiful-flowers.jpg);
+    opacity: 0.5;
+}
+
+.imageSlides{
+    display: none;
+}
+
+img{
+    margin: auto;
+    display: block;
+    width: 700px;
+    height: 700px;
+    border-radius: 60px;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+@media (max-width: 900px){
+    img{
+        width: 600px;
+        height: 600px;
+    }
+
+    .prev{
+        margin-left: 8%;
+    }
+
+    .next{
+        margin-right: 8%;
+    }
+}
+
+/* main image slider container */
+.container{
+    max-width: 900px;
+    position: relative;
+    margin: auto;
+}
+
+/* next and previous button */
+.btn{
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 8px 16px;
+    margin-top: -22px;
+    /* color: rgb(0,0,0); */
+    color: rgb(255, 253, 253);
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.2s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    /* background-color: rgba(255, 255, 255, 0.5); */
+    background-color: rgba(0, 0, 0, 0.8);
+    border-radius: 50%;
+}
+
+/* position of prev button */
+.prev{
+    left: 2%;
+}
+
+/* position of next  button */
+.next{
+    right: 1%;
+}
+
+/* on hover adding background color */
+.prev:hover, .next:hover {
+    color: rgb(0,0,0);
+    background-color: rgba(255, 255, 255, 0.5);
+}
